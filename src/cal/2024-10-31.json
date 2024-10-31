@@ -1,0 +1,30 @@
+{
+  "date": "2024-10-31",
+  "events": [
+    {
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "topic": "Project Kick-off Meeting"
+    },
+    {
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "topic": "Client Presentation"
+    },
+    {
+      "start_time": "13:30",
+      "end_time": "14:30",
+      "topic": "Team Brainstorming Session"
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "topic": "Product Development Review"
+    },
+    {
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "topic": "End-of-Day Recap and Planning"
+    }
+  ]
+}

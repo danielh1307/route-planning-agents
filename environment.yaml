@@ -1,0 +1,16 @@
+name: ost-agents-env
+channels:
+  - https://artifactory.gcp.sanet17.ch/artifactory/api/conda/conda-remote
+  - https://artifactory.gcp.sanet17.ch/artifactory/api/conda/conda-forge-remote
+dependencies:
+  - python==3.12.2
+  - pip
+  - pip:
+      # Global options can be tweaked.
+      # For example, if you want to use a pypi mirror first:
+      - --index-url https://artifactory.gcp.sanet17.ch/artifactory/api/pypi/pypi-org-pypi-remote/simple
+      - --index https://artifactory.gcp.sanet17.ch/artifactory/api/pypi/pypi-org-pypi-remote/simple
+      # Use another requirements file.
+      # Note that here also we can use relative paths.
+      # pip will be run from the environment file directory, if provided.
+      - -r requirements.txt
