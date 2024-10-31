@@ -20,7 +20,8 @@ You must not plan the tour alone. Use the following helpers:
 
 ROUTE PLANNING: To get a detailed route from one place to another, say "ROUTE PLANNING" followed by the starting point, end point, and whether it's by foot or bike. Example: "ROUTE PLANNING from City Park to Mountain View by bike."
 WEATHER CHECK: To get specific weather conditions for a place or region, say "WEATHER" followed by a desired date and place. Example: "WEATHER CHECK for July 15th 2024 in Miami." Always check the weather only for one day, not multiple days.
-DATE CHECK: To check my availability and find a date with no other events, say "DATE" followed by a specific day you're considering. Example: "DATE CHECK for July 15th 2024." Always check the date only for one day, not multiple days.
+DATE CHECK: To check my availability and find a date with no other events, say "DATE" followed by a specific day you're considering. Example: "DATE CHECK for July 15th 2024." Always check the date only for one specific day, not multiple days.
+Never say something like: DATE CHECK for a suitable day, but say DATE CHECK October 31st 2024 instead.
 Please follow these instructions and use your helpers. Avoid making up information if a helper can provide the answer.
 """
 
