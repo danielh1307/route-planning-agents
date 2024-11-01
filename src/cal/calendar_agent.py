@@ -15,6 +15,8 @@ Your task is to determine the free time of a user at a specific date.
 Use your available tools to get this information. You will be provided with a date, and your 
 task is to get the user's events at this date. 
 
+Use your tool only once, and then give a clear and concise answer. Do not use your tools multiple times!
+
 Summarize the events and free time clear and concise.
 """
 
