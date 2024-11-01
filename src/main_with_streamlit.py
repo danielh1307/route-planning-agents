@@ -6,10 +6,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 
 from src.graph.full_graph import graph
 
-st.title("ChatGPT-like clone")
-
-# Create the memory
-
+st.title("Route planning agents")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -22,7 +19,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-if user_input := st.chat_input("What is up?"):
+if user_input := st.chat_input("Let's plan your tour"):
 
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
@@ -35,9 +32,7 @@ if user_input := st.chat_input("What is up?"):
             last_message = event["messages"][-1]
             if isinstance(last_message, AIMessage):
                 st.session_state.messages.append({"role": "assistant", "content": last_message.content})
-                print({"role": "assistant", "content": last_message.content})
             if isinstance(last_message, ToolMessage):
                 st.session_state.messages.append({"role": "tool", "content": last_message.content})
-                print({"role": "tool", "content": last_message.content})
             last_message.pretty_print()
             st.write(last_message.content)
