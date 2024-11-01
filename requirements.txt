@@ -3,3 +3,4 @@ langchain-openai
 langsmith
 langgraph
 langgraph-checkpoint-sqlite
+streamlit
